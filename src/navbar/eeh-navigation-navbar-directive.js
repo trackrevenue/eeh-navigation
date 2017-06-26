@@ -71,7 +71,7 @@ var NavbarDirective = function ($window, eehNavigation) {
                     return;
                 }
                 var width = (newValue.innerWidth > 0) ? newValue.innerWidth : $window.screen.width;
-                if (width >= 768) {
+                if (width >= 1048) {
                     scope.isNavbarCollapsed = true;
                 }
             }, true);
