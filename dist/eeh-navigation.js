@@ -278,11 +278,13 @@
                     };
                 };
                 scope.$watch(getWindowDimensions, function(newValue) {
+                    console.log("Watch");
                     if (angular.isUndefined(newValue)) {
                         return;
                     }
                     var width = newValue.innerWidth > 0 ? newValue.innerWidth : $window.screen.width;
                     if (width <= 1152) {
+                        console.log("Width <= 1152");
                         scope.isNavbarCollapsed = true;
                     }
                 }, true);
