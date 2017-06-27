@@ -69,6 +69,12 @@ var NavbarDirective = function ($window, eehNavigation) {
             scope.$watch(getWindowDimensions, function (newValue) {
 		console.log("Watch");
 		console.log(scope.isNavbarCollapsed);
+		console.log("Window");
+		console.log($window.screen.width);
+		console.log("innerWidth");
+		console.log(newValue.innerWidth);
+		console.log(scope);
+		console.log($scope);
                 if (angular.isUndefined(newValue)) {
                     return;
                 }
