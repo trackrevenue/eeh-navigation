@@ -27,7 +27,10 @@ function NavbarBrandDirective() {
             href: '=',
             target: '=',
             src: '=',
-            click: '='
+            click: '=',
+            select: '=',
+            change: '=',
+            groupBy: '='
         }
     };
 }
